@@ -5,27 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <title>Weather App</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="info">
-        <h1 class="town">Town</h1>
-        <h2 class="temperature">Temperature</h2>
-        <p class="weather-info">Feels, Weather, Humidity</p>
-        <p class="date-time">Date & Time</p>
+  <body class="fade-in-body">
+    <!-- Hero -->
+    <div class="p-4 text-center bg-body-secondary">
+      <div class="container py-5">
+        <h1 class="text-body-emphasis">Weather App</h1>
+        <p class="col-lg-8 mx-auto lead">
+          Behold, my meticulously crafted weather application, meticulously developed with JavaScript and Bootstrap, seamlessly integrating with APIs to fetch and display real-time weather data with utmost precision and accuracy.
+        </p>
       </div>
-      <form class="form">
-        <label for="search"></label>
-        <input
-          type="text"
-          id="search"
-          name="search"
-          placeholder="Enter town name..."
-        />
-        <button type="submit" id="submit">submit</button>
+      <div class="container">
+      <form class="input-group mb-3">
+        <input type="text" id="search" class="form-control" placeholder="Town's Name" aria-label="Town's Name" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="submit">Search</button>
       </form>
+      </div>
+      
     </div>
+
+
+    <!-- Info -->
+    <div id="weather-info" class="content-wrapper container px-4 py-5">
+  
+      <!-- <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+        <div class="col d-flex flex-column align-items-start gap-2">
+          <h2 class="fw-bold text-body-emphasis">Town Name / Temperature</h2>
+          <h3 class="fw-bold text-body-emphasis">Condition / SVG</h3>
+          <p class="text-body-secondary">Region: <br/> Country: </p>
+        </div>
+  
+        <div class="col">
+          <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+<img src="./assets/wind.svg" height="30" alt="wind" />
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Wind</h4>
+              <p class="text-body-secondary">Wind Speed: kmh / mph </br> Wind Degree: </p>
+            </div>
+  
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                <img src="./assets/person-lines-fill.svg" height="30" alt="pressure" />
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Pressure</h4>
+              <p class="text-body-secondary">mb / in</p>
+            </div>
+  
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                <img src="./assets/fan.svg" height="30" alt="humidity" />
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Humidity</h4>
+              <p class="text-body-secondary">Hum / Cloud</p>
+            </div>
+  
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                <img src="./assets/thermometer-half.svg" height="30" alt="feels-like" />
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Feels like:</h4>
+              <p class="text-body-secondary">°C / °F</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+
+    <!-- Footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2023 Gabriel Beronja</span
+          >
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#github"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><img src="./assets/github.svg" height="20" alt="github" />
+                <use xlink:href="#linkedin"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><img src="./assets/linkedin.svg" height="20" alt="linkedin"/>
+                <use xlink:href="#facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>
