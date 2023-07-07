@@ -46,7 +46,7 @@ input.addEventListener("keydown", (event) => {
 // Get weather info
 async function getWeather() {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=167bfb446a67415ab91103622232603&q=${input.value}&aqi=no`,
+    `https://api.weatherapi.com/v1/current.json?key=167bfb446a67415ab91103622232603&q=${input.value}&aqi=no`,
     { mode: "cors" }
   );
   const weatherData = await response.json();
