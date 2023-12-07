@@ -26,7 +26,7 @@ Behold, my meticulously crafted weather application, meticulously developed with
 
 ## Preview
 
-[Weather App Preview](use the link in description)
+gaketz.github.io/weather-app/
 
 ## Acknowledgments
 
